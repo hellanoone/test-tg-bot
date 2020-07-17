@@ -1,0 +1,13 @@
+{
+  "name": "test-tg-bot",
+  "version": "1.0.0",
+  "description": "test bot",
+  "main": "test.js",
+  "scripts": {
+    "start": "node test.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.50.0"
+  }
+}
