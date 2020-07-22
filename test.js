@@ -8,7 +8,6 @@ bot.on('message', msg => {
     var text = msg.text
     bot.sendMessage(id, 'You\'ve entered: ' + text)
 
-    var rasp = /^\d{1,}(+|-|*|/|%|^)\d{1,}$/
-    if (msg.text.toString() === rasp) {
+    if (msg.text.toString() === /^\d{1,}(+|-|*|/|%|^)\d{1,}$/) {
         bot.sendMessage(id,"Right");
 })
