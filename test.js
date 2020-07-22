@@ -10,5 +10,5 @@ bot.on('message', msg => {
 
     var rasp = /^\d{1,}(+|-|*|/|%|^)\d{1,}$/
     if (msg.text.toString() === rasp) {
-        bot.sendMessage(msg.chat.id,"Right");
+        bot.sendMessage(id,"Right");
 })
