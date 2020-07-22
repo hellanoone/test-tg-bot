@@ -14,12 +14,23 @@ bot.on('message', msg => {
         let val2 = Number(arr[2])
 
         switch (sign) {
-            case '+': a = val1+val2
-            case '-': a = val1-val2
-            case '*': a = val1*val2
-            case '/': a = val1/val2
-            case '%': a = val1%val2
-            case '^': a = val1**val2
+            case '+': 
+                a = val1+val2
+                break;
+            case '-': 
+                a = val1-val2
+                break;
+            case '*': 
+                a = val1*val2
+                break;
+            case '/': 
+                a = val1/val2
+                break;
+            case '%': 
+                a = val1%val2
+                break;
+            case '^': 
+                a = val1**val2
         }
     }
 
