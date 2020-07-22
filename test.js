@@ -7,7 +7,7 @@ bot.on('message', msg => {
     const {chat: { id }} = msg
     var text = msg.text
     var rasp = '/^\d{1,}(\+|-|\*|\/|%|^)\d{1,}$/'
-    //if (rasp.match() === text) {
+    if (rasp.match(text)) {
         var str = text
         let arr = str.split(' ')
         let sign = arr[1]
@@ -28,7 +28,7 @@ bot.on('message', msg => {
             case '^':
                 a = val1**val2
         }
-    //}
+    }
 
     bot.sendMessage(id, 'The result is: ' + a)
 })
