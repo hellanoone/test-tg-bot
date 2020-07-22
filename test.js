@@ -8,8 +8,7 @@ bot.on('message', msg => {
     var text = msg.text
     var rasp = '/^\d{1,}(\+|-|\*|\/|%|^)\d{1,}$/'
     if (rasp.test(text)) {
-        var str = text
-        let arr = str.split(' ')
+        let arr = text.split(' ')
         let sign = arr[1]
         let val1 = Number(arr[0])
         let val2 = Number(arr[2])
