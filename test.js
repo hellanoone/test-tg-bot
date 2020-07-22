@@ -34,7 +34,6 @@ bot.on('message', msg => {
                 a = val1**val2
                 break;
         }
+        bot.sendMessage(id, 'The result is: ' + a)
     }
-
-    bot.sendMessage(id, 'The result is: ' + a)
 })
