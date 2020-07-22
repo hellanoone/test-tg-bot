@@ -12,7 +12,8 @@ bot.on('message', msg => {
         let sign = arr[1]
         let val1 = Number(arr[0])
         let val2 = Number(arr[2])
-
+        var a = 0
+        
         switch (sign) {
             case '+': 
                 a = val1+val2
@@ -31,6 +32,7 @@ bot.on('message', msg => {
                 break;
             case '^': 
                 a = val1**val2
+                break;
         }
     }
 
