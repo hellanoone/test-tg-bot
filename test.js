@@ -6,7 +6,7 @@ bot.on('message', msg => {
 
     const {chat: { id }} = msg
     var text = msg.text
-    var rasp = '/^\d{1,}(\+|-|\*|\/|%|^)\d{1,}$/'
+    var rasp = '/^\d{1,}([+\-*\/%^])\d{1,}$/'
     if (rasp.test(text)) {
         let arr = text.split(' ')
         let sign = arr[1]
